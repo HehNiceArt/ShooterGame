@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor2
+    uniqueID: 166402847
+    locked: 0
+  - name: Floor
+    uniqueID: 23511567
+    locked: 0
+  - name: Buildings
+    uniqueID: 3060597935
+    locked: 0
+  - name: Walls
+    uniqueID: 4159239447
+    locked: 0
+  - name: Player
+    uniqueID: 584385971
+    locked: 0
+  - name: bullet
+    uniqueID: 560449061
+    locked: 0
