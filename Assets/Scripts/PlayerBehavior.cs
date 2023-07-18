@@ -26,6 +26,7 @@ public class PlayerBehavior : MonoBehaviour
     private bool canShoot = false;
 
     public float timeToLive = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,5 +96,17 @@ public class PlayerBehavior : MonoBehaviour
     {
         //if press WASD =  to Vector 2 Values
         moveInput = inputValue.Get<Vector2>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Bullet"))
+        {
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(collision.gameObject);
+            }
+            Debug.Log("Collided with " + collision.gameObject.name);
+        }
     }
 }
